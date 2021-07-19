@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-COPY /var/jenkins_home/workspace/buildTest/target/demo-0.0.1-SNAPSHOT.jar app.jar
+COPY /buildTest/target/demo-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
